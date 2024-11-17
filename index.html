@@ -8,21 +8,11 @@
     <script type="text/javascript">
         var urlobj = new window.URL(window.location.href);
         let url = "index.html"
-      let Ho=false;
-      var request = new XMLHttpRequest();  
-request.open('GET', 'https://worker-server.pages.dev/index.html', true);
-request.onreadystatechange = function(){
-    if (request.readyState === 4){
-        if (request.status === 404) {  
-          
-        }  else {
-Ho=true;
+     if (window.location.href !== 'about:blank') {
+    // Place the code you want to execute when the URL is not 'about blank'
+    console.log("The URL is not about:blank. Proceeding with the action.");
 
-          
-        }
-    }
-};
-        if (Ho) {
+       
             var win;
            
             if (win) {
