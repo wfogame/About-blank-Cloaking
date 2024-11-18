@@ -4,12 +4,15 @@
 <head>
 </head>
 <body>
-    <button>embed about:blank</button>
+    <button id ="my">embed about:blank</button>
     <div id = "myP"></div>
+    <button id = "myP" onclick = "REPlICASELF()"></button>
     <script type="text/javascript">
+        function REPlICASELF (){
         let html = document.getElementById("demo").innerHTML;
+                document.getElementById("myP").innerHTML = html;
+        }
         var urlobj = new window.URL(window.location.href);
-        document.getElementById("myP").innerHTML = html;
 
         let url = prompt("Please enter the url", "index.html");
     // Place the code you want to execute when the URL is not 'about blank'
@@ -26,7 +29,7 @@ if (url) { var win; document.querySelector('button').onclick = function() { if (
                                               iframe.src = url;
                                             win.document.body.appendChild(iframe); 
                                             } document.querySelector('button').style.background='#ff5148'; 
-                                        document.querySelector('button').innerHTML="Launched"; }; }
+                                        document.getElementById("my").innerHTML="Launched"; }; }
     </script> 
     <style> * { color: white; font-family: arial; text-align: center; } 
         button { width: 220px; height: 40px; border-radius: 12px; 
