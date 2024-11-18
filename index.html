@@ -5,15 +5,24 @@
 </head>
 <body>
     <button id ="my">embed about:blank</button>
-    <button id = "myP" onclick = "REPlICASELF()"></button>
+    <button id = "myP" onclick = "REPlICASELF()">Click to replica</button>
+<div style="display:none;" id = "texxt">Go to github and search, wfogame</div>
+    <button onclick = "WHERETOGET()"></button>
     <script type="text/javascript">
         function REPlICASELF (){
         let html = document.getElementById("demo").innerHTML;
          var s = window.open();
         s.document.body.innerHTML = html;
-document.getElementById("myP").innerHTML="REPLICATED"; }; }
+document.getElementById("myP").innerHTML="REPLICATED";
 
-        }
+        } 
+function WHERETOGET() {
+
+document.getElementById("texxt").style.property = display:initial;
+
+    
+}
+        
         var urlobj = new window.URL(window.location.href);
 
         let url = prompt("Please enter the url", "index.html");
