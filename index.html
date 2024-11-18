@@ -4,7 +4,7 @@
 <head>
 </head>
 <body>
-    <body onbeforeunload=return REPlICASELF()>
+    <body onbeforeunload="return STOP()">
 
     <button id ="my">embed about:blank</button>
     <button id = "myP" onclick = "REPlICASELF()">Click to replica</button>
@@ -39,7 +39,12 @@ if (url) { var win; document.querySelector('button').onclick = function() { if (
          var s = window.open();
         s.document.body.innerHTML = html;
 document.getElementById("myP").innerHTML="REPLICATED";
+function STOP(){
 
+return "Don't you dare leave";
+
+    
+}
         } 
 
     </script> 
