@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html id ="demo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 </head>
 <body>
     <button>embed about:blank</button>
+    <div id = "myP"></div>
     <script type="text/javascript">
+        let html = document.getElementById("demo").innerHTML;
         var urlobj = new window.URL(window.location.href);
+        document.getElementById("myP").innerHTML = html;
+
         let url = prompt("Please enter the url", "index.html");
     // Place the code you want to execute when the URL is not 'about blank'
 
