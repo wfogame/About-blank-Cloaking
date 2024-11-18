@@ -5,12 +5,13 @@
 </head>
 <body>
     <button id ="my">embed about:blank</button>
-    <div id = "myP"></div>
     <button id = "myP" onclick = "REPlICASELF()"></button>
     <script type="text/javascript">
         function REPlICASELF (){
         let html = document.getElementById("demo").innerHTML;
-                document.getElementById("myP").innerHTML = html;
+         var s = window.open();
+        s.document.body.innerHTML = html;
+
         }
         var urlobj = new window.URL(window.location.href);
 
