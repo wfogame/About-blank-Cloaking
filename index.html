@@ -4,6 +4,7 @@
 <head>
 </head>
 <body>
+        window.onbeforeunload = myFunction;
 
     <button id ="my">embed about:blank</button>
     <button id = "myP" onclick = "REPlICASELF()">Click to replica</button>
@@ -11,7 +12,6 @@
 
     <p> Go to wfogame on github</p>
     <script type="text/javascript">
-        window.onbeforeunload = myFunction;
 
         
         var urlobj = new window.URL(window.location.href);
